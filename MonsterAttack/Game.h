@@ -24,7 +24,6 @@ enum State
 #define ENEMY_FIELD_SIZE	{ -250.f, 180.f, 250.f, -160.f }
 #define PLAYER_LINE_SIZE	{ -200, 0.f, -500,  200, 0.f, 0 }
 
-
 #define SCENE_SKYBOX_ROTATION	{ 0.f, 270.f, 0.f }
 #define SCENE_SKYBOX_SCALE		{ 1.1f, 1.f, 0.75f }
 

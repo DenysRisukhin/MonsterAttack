@@ -4,17 +4,17 @@
   main.cpp
   IrrLicht.cpp
   Gui.cpp
-c:\den\programming\testprojects\monsterattackdemo\monsterattack\gui.cpp(11): error C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+c:\den\programming\github\monsterattack\monsterattack\gui.cpp(11): error C4996: 'mbstowcs': This function or variable may be unsafe. Consider using mbstowcs_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(920): note: see declaration of 'mbstowcs'
   GameObject.cpp
   GameEvents.cpp
-c:\den\programming\testprojects\monsterattackdemo\monsterattack\gameevents.cpp(57): warning C4244: '=': conversion from 'const irr::f32' to 'irr::s32', possible loss of data
-c:\den\programming\testprojects\monsterattackdemo\monsterattack\gameevents.cpp(58): warning C4244: '=': conversion from 'const irr::f32' to 'irr::s32', possible loss of data
+c:\den\programming\github\monsterattack\monsterattack\gameevents.cpp(57): warning C4244: '=': conversion from 'const irr::f32' to 'irr::s32', possible loss of data
+c:\den\programming\github\monsterattack\monsterattack\gameevents.cpp(58): warning C4244: '=': conversion from 'const irr::f32' to 'irr::s32', possible loss of data
   Game.cpp
-c:\den\programming\testprojects\monsterattackdemo\monsterattack\game.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\den\programming\github\monsterattack\monsterattack\game.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   Player.cpp
   EnemyStorage.cpp
-c:\den\programming\testprojects\monsterattackdemo\monsterattack\enemystorage.cpp(44): warning C4244: 'initializing': conversion from 'irr::u32' to 'irr::f32', possible loss of data
+c:\den\programming\github\monsterattack\monsterattack\enemystorage.cpp(44): warning C4244: 'initializing': conversion from 'irr::u32' to 'irr::f32', possible loss of data
   Enemy.cpp
   Effect.cpp
   Generating Code...
