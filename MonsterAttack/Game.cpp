@@ -348,7 +348,7 @@ void Game::applyBulletsMoves()
 			{
 				if (soundPlay)
 				{
-					ISound *bang = sound->play2D("sounds/bang.wav", false, true);
+					ISound *bang = sound->play2D("sounds/crash.wav", false, true);
 					bang->setVolume(0.1f);
 					bang->setIsPaused(false);
 					bang->drop();
