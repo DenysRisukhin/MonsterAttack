@@ -25,9 +25,6 @@
     <Filter Include="Irrklang">
       <UniqueIdentifier>{cff8a513-3300-45f0-8718-09ad8223a62e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="GUI">
-      <UniqueIdentifier>{ee037e8d-5975-4612-b03a-0c4a6769dabc}</UniqueIdentifier>
-    </Filter>
     <Filter Include="TexturesManager">
       <UniqueIdentifier>{1f9ceb2b-64df-4f89-a6dd-8761e43e761c}</UniqueIdentifier>
     </Filter>
@@ -46,6 +43,9 @@
     <Filter Include="Effect">
       <UniqueIdentifier>{e4d7324f-0183-4ae0-bc0f-856172a458f2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Irrlicht\GUI">
+      <UniqueIdentifier>{ee037e8d-5975-4612-b03a-0c4a6769dabc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -58,7 +58,7 @@
       <Filter>Irrlicht\Events</Filter>
     </ClCompile>
     <ClCompile Include="Gui.cpp">
-      <Filter>GUI</Filter>
+      <Filter>Irrlicht\GUI</Filter>
     </ClCompile>
     <ClCompile Include="TextureManager.cpp">
       <Filter>TexturesManager</Filter>
@@ -108,7 +108,7 @@
       <Filter>Irrklang</Filter>
     </ClInclude>
     <ClInclude Include="Gui.h">
-      <Filter>GUI</Filter>
+      <Filter>Irrlicht\GUI</Filter>
     </ClInclude>
     <ClInclude Include="TextureManager.h">
       <Filter>TexturesManager</Filter>

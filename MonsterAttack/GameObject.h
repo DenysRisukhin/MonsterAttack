@@ -9,15 +9,15 @@ class GameObject
 
 protected:
 
-	IAnimatedMeshSceneNode						*node;
-	list<ISceneNodeAnimator *>					animators;
+	IAnimatedMeshSceneNode *node;
+	list<ISceneNodeAnimator *> animators;
 
 	// Special scene node animator for doing automatic collision detection and response.
 	list<ISceneNodeAnimatorCollisionResponse *>	collisions;
-	path										name;
+	path name;
 
 	//s32 -> int
-	s32											health;
+	s32	health;
 private:
 
 	void addAllAnimators();
@@ -36,47 +36,47 @@ public:
 	example easily possible to attach a light to a moving car, or to place
 	a walking character on a moving platform on a moving ship.
 	*/
-	ISceneNode									*getNode() const;
+	ISceneNode	*getNode() const;
 
-	list<ISceneNodeAnimator *>					getAnimators() const;
+	list<ISceneNodeAnimator *>	getAnimators() const;
 
 	//! Animates a scene node. Can animate position, rotation, material, and so on.
 	/** A scene node animator is able to animate a scene node in a very simple way. It may
 	change its position, rotation, scale and/or material. There are lots of animators
 	to choose from. You can create scene node animators with the ISceneManager interface.
 	*/
-	ISceneNodeAnimator							*getAnimatorByIndex(u32 index) const;
+	ISceneNodeAnimator	*getAnimatorByIndex(u32 index) const;
 
 	list<ISceneNodeAnimatorCollisionResponse *>	getCollisions() const;
-	ISceneNodeAnimatorCollisionResponse			*getCollisionByIndex(u32 index) const;
+	ISceneNodeAnimatorCollisionResponse	*getCollisionByIndex(u32 index) const;
 
-	path										getName() const;
-	s32											getHealth() const;
+	path getName() const;
+	s32	getHealth() const;
 
-	vector3df									getPosition() const;
-	vector3df									getRotation() const;
-	vector3df									getScale() const;
+	vector3df getPosition() const;
+	vector3df getRotation() const;
+	vector3df getScale() const;
 
-	void										setPosition(const vector3df position);
-	void										setRotation(const vector3df rotation);
-	void										setScale(const vector3df scale);
+	void setPosition(const vector3df position);
+	void setRotation(const vector3df rotation);
+	void setScale(const vector3df scale);
 
-	void										setNode(IAnimatedMeshSceneNode *newNode);
-	void										setAnimators(list<ISceneNodeAnimator *> newAnimators);
-	void										setCollisions(list<ISceneNodeAnimatorCollisionResponse *>	newCollisions);
-	void										setName(const path newName);
-	void										setHealth(const s32 newHealth);
+	void setNode(IAnimatedMeshSceneNode *newNode);
+	void setAnimators(list<ISceneNodeAnimator *> newAnimators);
+	void setCollisions(list<ISceneNodeAnimatorCollisionResponse *>	newCollisions);
+	void setName(const path newName);
+	void setHealth(const s32 newHealth);
 
-	bool										createNode(ISceneManager *manager);
+	bool createNode(ISceneManager *manager);
 
-	ITriangleSelector							*createTriangleSelector(ISceneManager *manager) const;
+	ITriangleSelector *createTriangleSelector(ISceneManager *manager) const;
 
-	void										addAnimator(ISceneNodeAnimator *animator);
-	void										addCollision(ISceneNodeAnimatorCollisionResponse *collision);
+	void addAnimator(ISceneNodeAnimator *animator);
+	void addCollision(ISceneNodeAnimatorCollisionResponse *collision);
 
-	virtual	bool								move(f32 delta);
-	void										damage(u32 dmg);
-	bool 										isDead() const;
+	virtual	bool move(f32 delta);
+	void damage(u32 dmg);
+	bool isDead() const;
 
-	virtual void 								drop();
+	virtual void drop();
 };

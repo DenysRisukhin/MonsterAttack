@@ -41,29 +41,29 @@ class Enemy : public GameObject
 
 private:
 
-	EnemyType	type;
-	Damage		ownDamage;
+	EnemyType type;
+	Damage ownDamage;
 
 	// Rectangle with float values
-	rectf		limits;
-	Direction	direction;
+	rectf limits;
+	Direction direction;
 
 public:
 
 	Enemy();
 	Enemy(ISceneManager *manager, TextureManager *&texManager, u32 curType, Direction dir, vector3df position, rectf newLimits);
 
-	EnemyType	getType() const;
-	Damage		getDamage() const;
-	rectf		getLimits() const;
-	Direction	getDirection() const;
+	EnemyType getType() const;
+	Damage getDamage() const;
+	rectf getLimits() const;
+	Direction getDirection() const;
 
-	void		setType(const EnemyType newType);
-	void		setDamage(const Damage newDamage);
-	void		setLimits(const rectf newPath);
-	void		setDirection(const Direction newDirection);
+	void setType(const EnemyType newType);
+	void setDamage(const Damage newDamage);
+	void setLimits(const rectf newPath);
+	void setDirection(const Direction newDirection);
 
-	void		moveFromField();
-	void		deathAnimation();
-	bool		move(f32 delta);
+	void moveFromField();
+	void deathAnimation();
+	bool move(f32 delta);
 };

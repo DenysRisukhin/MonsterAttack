@@ -28,8 +28,8 @@ public:
 
 	Player();
 
-	bool		move(f32 delta);
-	vector3df	fire();
+	bool move(f32 delta);
+	vector3df fire();
 
 	void setIdleAnimation();
 	void setRunningAnimation();

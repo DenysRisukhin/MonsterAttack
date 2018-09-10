@@ -45,14 +45,14 @@ class GUI
 
 private:
 
-	list<IGUIButton *>	buttons;
-	IGUIStaticText		*score;
-	IGUIStaticText		*health;
-	IGUIStaticText		*result;
-	IGUIComboBox		*musicBox;
-	IGUIComboBox		*soundBox;
-	IGUIImage			*logo;
-	IGUIImage			*life;
+	list<IGUIButton*> buttons;
+	IGUIStaticText *score;
+	IGUIStaticText *health;
+	IGUIStaticText *result;
+	IGUIComboBox *musicBox;
+	IGUIComboBox *soundBox;
+	IGUIImage *logo;
+	IGUIImage *life;
 
 	void addButton(IGUIEnvironment *gui, ITexture *&texture, path name, const recti size, u32 btn);
 
@@ -60,22 +60,21 @@ public:
 
 	GUI();
 
-	void	setScore(const u32 score);
-	void	setHealth(const s32 health);
+	void setScore(const u32 score);
+	void setHealth(const s32 health);
 
-	void	createLife(IGUIEnvironment *gui, IVideoDriver *drv);
+	void createLife(IGUIEnvironment *gui, IVideoDriver *drv);
 
-	bool	isButtonPressed(u32 id) const;
-	s32		getMusicSelection() const;
-	s32		getSoundSelection() const;
+	bool isButtonPressed(u32 id) const;
+	s32	getMusicSelection() const;
+	s32	getSoundSelection() const;
 
-	void	menu(IGUIEnvironment *gui, TextureManager *&manager, IVideoDriver *drv);
-	void	options(IGUIEnvironment *gui, TextureManager *&manager);
-	void	pause(IGUIEnvironment *gui, TextureManager *&manager);
-	void	game(IGUIEnvironment *gui, TextureManager *&manager, IVideoDriver *drv);
-	void	win(IGUIEnvironment *gui, TextureManager *&manager);
-	void	lose(IGUIEnvironment *gui, TextureManager *&manager);
+	void menu(IGUIEnvironment *gui, TextureManager *&manager, IVideoDriver *drv);
+	void options(IGUIEnvironment *gui, TextureManager *&manager);
+	void pause(IGUIEnvironment *gui, TextureManager *&manager);
+	void game(IGUIEnvironment *gui, TextureManager *&manager, IVideoDriver *drv);
+	void win(IGUIEnvironment *gui, TextureManager *&manager);
+	void lose(IGUIEnvironment *gui, TextureManager *&manager);
 
-	void	drop(bool fScore = false, bool fHealth = false);
-
+	void drop(bool fScore = false, bool fHealth = false);
 };

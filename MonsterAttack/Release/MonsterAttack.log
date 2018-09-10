@@ -1,9 +1,23 @@
-﻿  Game.cpp
+﻿  Bullet.cpp
+  BulletStorage.cpp
+  Enemy.cpp
+  EnemyStorage.cpp
+EnemyStorage.cpp(44): warning C4244: 'initializing': conversion from 'irr::u32' to 'irr::f32', possible loss of data
+  Game.cpp
 Game.cpp(18): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GameEvents.cpp
+GameEvents.cpp(57): warning C4244: '=': conversion from 'const irr::f32' to 'irr::s32', possible loss of data
+GameEvents.cpp(58): warning C4244: '=': conversion from 'const irr::f32' to 'irr::s32', possible loss of data
+  GameObject.cpp
+  Gui.cpp
+  IrrLicht.cpp
+  Player.cpp
+  TextureManager.cpp
+  main.cpp
   Generating code
-  1 of 494 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+  0 of 494 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   MonsterAttack.vcxproj -> C:\Den\Programming\GitHub\MonsterAttack\Release\MonsterAttack.exe
   MonsterAttack.vcxproj -> C:\Den\Programming\GitHub\MonsterAttack\Release\MonsterAttack.pdb (Full PDB)

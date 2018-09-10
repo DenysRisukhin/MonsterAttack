@@ -14,12 +14,10 @@ ITexture **TextureManager::getEnemyTexture() const
 	return enemyTex;
 }
 
-
 ITexture **TextureManager::getButtonsTexture() const
 {
 	return buttonsTex;
 }
-
 
 void TextureManager::setPlayerTexture(ITexture **texture)
 {
@@ -30,7 +28,6 @@ void TextureManager::setEnemyTexture(ITexture **texture)
 {
 	enemyTex = texture;
 }
-
 
 void TextureManager::setButtonsTexture(ITexture **texture)
 {

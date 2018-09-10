@@ -9,20 +9,19 @@
 
 class EnemyStorage
 {
-
 private:
 
-	list<Enemy>				enemyList;
+	list<Enemy>	enemyList;
 
 public:
 
-	list<Enemy>				getEnemyList() const;
+	list<Enemy>	getEnemyList() const;
 
-	void					setEnemyList(list<Enemy> newList);
+	void setEnemyList(list<Enemy> newList);
 
-	vector3df				getRandomEnemyPosition() const;
+	vector3df getRandomEnemyPosition() const;
 
-	bool					createEnemies(ISceneManager *manager, TextureManager *&texManager, rectf limits);
+	bool createEnemies(ISceneManager *manager, TextureManager *&texManager, rectf limits);
 
 	// IMetaTriangleSelector - Interface for making multiple triangle selectors work as one big selector.
 
@@ -32,11 +31,11 @@ public:
 	*/
 
 	// The method creates triangleselector for each enemy from enemyList & add it to the IMetaTriangleSelector.
-	IMetaTriangleSelector	*createSelectors(ISceneManager *manager);
+	IMetaTriangleSelector *createSelectors(ISceneManager *manager);
 
 	// The method checks for enemies damage and death
-	bool					checkNode(ISceneNode *check, ISceneManager *manager, u32 *score, ISoundEngine *sound, bool soundPlay, vector3df *position);
-	void					move(f32 delta);
-	bool					step();
-	void					drop();
+	bool checkNode(ISceneNode *check, ISceneManager *manager, u32 *score, ISoundEngine *sound, bool soundPlay, vector3df *position);
+	void move(f32 delta);
+	bool step();
+	void drop();
 };
