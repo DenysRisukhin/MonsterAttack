@@ -1,5 +1,5 @@
-Main character has 100% lives that can be lost when meeting with enemy bullets.
-The goal is to kill all enemies and not to lose all lives.
+	Main character has 100% lives that can be lost when meeting with enemy bullets.
+	The goal is to kill all enemies and not to lose all lives.
 
 Watch gameplay video here:
 
@@ -26,11 +26,11 @@ Gameplay Completion:
 	
 	Displaying additional information:     	    player health, score
 	
-	Player:                                      Sindy
+	Player:                                     Sindy
 	
-	Enemies:	                                    ● badFaerie 
+	Enemies:	                                  ● badFaerie 
 	                                            ● badHead
-                                                ● badNinja
+                                              ● badNinja
 	
 	In-game menu support (IGM)        	    ● Resume
 						    ● Back
