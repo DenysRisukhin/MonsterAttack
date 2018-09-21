@@ -27,7 +27,7 @@ Gameplay Completion:
 	
 	Enemies:	                            ● badFaerie 
 	                                            ● badHead
-                                                    ● badNinja
+                                                ● badNinja
 	
 	In-game menu support (IGM)        	    ● Resume
 						    ● Back
